@@ -1,3 +1,4 @@
+import { drive } from "googleapis/build/src/apis/drive";
 import "./App.css";
 import BookStoreCard from "./components/BookStoreCard";
 import { useBookStores } from "./hooks/rq/useGetStore";
@@ -17,6 +18,10 @@ function App() {
           website,
           countryCode,
         }) => {
+          if (isLoading) {
+            return <p>Loading...</p>;
+          }
+
           return (
             <BookStoreCard
               key={name}

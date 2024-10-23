@@ -87,6 +87,7 @@ button:focus-visible {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: box-shadow 0.3s ease;
+    width: 60vw;
 }
 
 .bookstore-card:hover {
@@ -164,8 +165,8 @@ button:focus-visible {
 }
 
 .country-flag {
-    width: 32px;
-    height: 20px;
+    width: 64px;
+    height: 24px;
     object-fit: contain;
     margin-left: 16px;
 }
@@ -173,4 +174,14 @@ button:focus-visible {
 .flex-just-btwn {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    .flex-just-btwn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bookstore-card {
+        width: auto;
+    }
 }
