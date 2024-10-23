@@ -74,3 +74,103 @@ button:focus-visible {
         background-color: #f9f9f9;
     }
 }
+
+/* BookStoreCard.css */
+
+.bookstore-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.bookstore-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bookstore-image-wrapper {
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.bookstore-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bookstore-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookstore-name {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+}
+
+.books-wrapper {
+    margin-bottom: 16px;
+}
+
+.books-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-item {
+    font-size: 1em;
+}
+
+.book-name {
+    font-weight: bold;
+}
+
+.bookstore-rating {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.star {
+    font-size: 1.5em;
+    color: #d3d3d3;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.bookstore-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.establishment-date {
+    margin: 0;
+}
+
+.country-flag {
+    width: 32px;
+    height: 20px;
+    object-fit: contain;
+    margin-left: 16px;
+}
+
+.flex-just-btwn {
+    display: flex;
+    justify-content: space-between;
+}
