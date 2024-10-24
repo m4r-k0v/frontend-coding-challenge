@@ -81,5 +81,3 @@ The app should now be accessible at [http://localhost:3000](http://localhost:300
   - `package-lock.json` - Locks the versions of the installed packages.
 
 - `book-store-api/` - The API needed for backend data.
-
-Feel free to modify the app as needed and enjoy coding!
