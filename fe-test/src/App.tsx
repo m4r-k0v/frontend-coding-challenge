@@ -1,10 +1,9 @@
-import { drive } from "googleapis/build/src/apis/drive";
 import "./App.css";
 import BookStoreCard from "./components/BookStoreCard";
 import { useBookStores } from "./hooks/rq/useGetStore";
 
 function App() {
-  const { data, isLoading } = useBookStores();
+  const { data, isLoading, isError } = useBookStores();
 
   return (
     <>
@@ -20,6 +19,10 @@ function App() {
         }) => {
           if (isLoading) {
             return <p>Loading...</p>;
+          }
+
+          if (isError) {
+            return <p>Please check if API is running...</p>;
           }
 
           return (
